@@ -43,10 +43,10 @@ function createDiv(HR, TC, country) {
 /* Creating entry of posts, each with the image location (HRe), text content (TCe) and country (countrye) */
 let entryObjects = [
     {HRe: "../assets/images/F1210019.JPG",
-    TCe: "Hello World",
+    TCe: "Hello World 4565f4ds68f4ssddddsdfsdfdsfdsfdsssssssssssssdfsdfsdfsdfsdfdsfdssss6sd4f",
     countrye: "korea"},
     {HRe: "../assets/images/F1190025.JPG",
-    TCe: "Hey World",
+    TCe: "Hey World ddddddddddddddddddddddddddddddddddddddddd",
     countrye: "korea"},
     {HRe: "../assets/images/20180415-DSC01685-3.jpg",
     TCe: "Good Morning World",

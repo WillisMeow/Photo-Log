@@ -6,10 +6,15 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
-/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+body {
+    margin: 0;
+    max-width: 100vw;
+}
+
+/* || Top Navigation element -------------------
+------------------------------------------- */
 .main-navigation li {
     list-style-type: none;
-    /* margin: 15px 2vw; */
     margin-top: 20px;
     font-size: 3vh;
 }
@@ -35,55 +40,61 @@ nav {
     margin: 0;
     display: flex;
 }
-/* ----------------------------------------------------------------------------------------------------------------------------------------- */
-body {
-    margin: 0;
-    max-width: 100vw;
-}
-/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* || Main Display element -------------------
+------------------------------------------- */
 .flex {
     display: flex;
 }
 .spacer {
-    min-width: 30vw;
+    width: 30%;
+    min-width: 30%;
 }
-.flex-container img {
+
+/* .flex-container img {
     max-width: 40vw;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.2vw;
     padding: 1.2vw;
     background-color: white;
+}  */
+.mid {
+    width: 40%
 }
-div.right {
-    flex-grow: 1;
+.mid img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.2vw;
+    padding: 1.2vw;
+    background-color: white;
+} 
+
+div.right { /* right column set visibility = hidden */
+    width: 30%;
+    /* flex-grow: 0; */
     visibility: hidden;
 }
 
-.mid:hover ~ div.right {
+p.right {
+    margin: 0 1.2vw 1.2vw 1.2vw;
+    background-color: lightblue;
+    border: 1.2vw solid white;
+    word-wrap: break-word;
+    padding: 0.2vw;
+    font-size: 1.75vh;
+}
+
+.mid:hover ~ div.right { /* on hover over mid column, set right colum visibility = visible */
     visibility: visible;
 }
 
-
-
-/* .flex-container {
-    max-width: 40vw;
-    margin-left: auto;
-    margin-right: auto;
+.flex-container img:hover { /* on hover over image, set background color change */
+    background-color: lightblue;
 }
 
-
-.flex-container img {
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.2vw;
-    padding: 1.2vw;
-    background-color: white;
-    max-width: 100%;
-} */
-/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------- */
 .home-main-writing {
     max-width: calc(40vw + 40px);
     margin-left: auto;
@@ -93,7 +104,6 @@ div.right {
 .home-main-writing p {
     text-align: left;
 }
-
 
 .box {
     inline-size: 150px;
