@@ -55,9 +55,15 @@ body {
     padding: 1.2vw;
     background-color: white;
 }
-.right {
+div.right {
     flex-grow: 1;
+    visibility: hidden;
 }
+
+.mid:hover ~ div.right {
+    visibility: visible;
+}
+
 
 
 /* .flex-container {

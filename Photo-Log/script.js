@@ -61,35 +61,3 @@ for (i=0; i<entryObjects.length;i++) {
 }
 /* TODO: <input> field for user input of photos and text? */
 
-/* || Displaying text content on hover over photo -------------------------------------
-------------------------------------------------------------------------------------- */
-/* TODO: Wrap all of the below in a function */
-var theParent = document.querySelector(".flex-container");
-theParent.addEventListener("mouseover", onMouseOver, false);
-theParent.addEventListener("mouseout", onMouseOut, false);
-
-document.getElementById("right-1").hidden = true;
-document.getElementById("right-2").hidden = true;
-document.getElementById("right-3").hidden = true;
-document.getElementById("right-4").hidden = true;
-
-function onMouseOver(e) {
-    if (e.target !== e.currentTarget) {
-        var clickedItem = e.target.id;
-        /* alert(e.target.id) */
-        let be = clickedItem.replace('image', 'right');
-        document.getElementById(be).hidden = false;
-    }
-
-    e.stopPropagation();
-}
-
-function onMouseOut(e) {
-    if (e.target !== e.currentTarget) {
-        var clickedItem = e.target.id;
-        /* alert(e.target.id) */
-        let be = clickedItem.replace('image', 'right');
-        document.getElementById(be).hidden = true;
-    }
-    e.stopPropagation();
-}
